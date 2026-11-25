@@ -14,10 +14,10 @@ export const navigationLinks: NavigationLink[] = [
 
 export const profile = {
   name: "Pamella Fernandes",
-  role: "Software Engineer · Frontend",
+  role: "Frontend Software Engineer · Frontend",
   headline: "Building thoughtful digital experiences through frontend engineering.",
   introduction:
-    "I'm a Software Engineer with 4+ years of experience building web and mobile applications with React, React Native, and TypeScript. I turn complex business requirements into reliable, maintainable products, with a focus on collaboration, ownership, and continuous improvement.",
+    "I'm a Frontend Software Engineer with 4+ years of experience building web and mobile applications with React, React Native, and TypeScript. I turn complex business requirements into reliable, maintainable products, with a focus on collaboration, ownership, and continuous improvement.",
   about:
     "I enjoy working at the intersection of technology, product needs, and people — understanding the problem, contributing to technical decisions, and delivering solutions that make everyday workflows better.",
   socialLinks: {
@@ -55,7 +55,7 @@ export const contactActions: ActionLink[] = [
 export const experiences: Experience[] = [
   {
     id: "localiza",
-    role: "Software Engineer",
+    role: "Frontend Software Engineer",
     company: "Blite Tecnologia / Localiza",
     context: "Enterprise platforms · Current",
     description:
