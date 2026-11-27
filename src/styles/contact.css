@@ -1,0 +1,131 @@
+.contact {
+  padding: 78px 0 90px;
+}
+
+.contact-panel {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(9, 21, 42, 0.82);
+}
+
+.contact-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 16px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.contact-field-message {
+  grid-column: 1 / -1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 0;
+  padding: 11px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #071226;
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  min-height: 74px;
+  resize: none;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.contact-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #17071d;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.contact-submit:hover {
+  background: #ff78f2;
+}
+
+.contact-submit:focus-visible {
+  outline: 2px solid #ff9cf5;
+  outline-offset: 3px;
+}
+
+.contact-status {
+  min-height: 1.4em;
+  margin: 10px 0 4px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+.contact-social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.contact-social a {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: rgba(9, 21, 42, 0.82);
+  color: var(--muted);
+  cursor: pointer;
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    background-color 220ms ease,
+    box-shadow 220ms ease,
+    color 220ms ease;
+}
+
+.contact-social a:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  background: rgba(237, 73, 232, 0.08);
+  box-shadow: 0 8px 20px rgba(22, 185, 239, 0.14);
+  color: var(--accent);
+}
+
+.contact-social a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}

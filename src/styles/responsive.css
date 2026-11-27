@@ -1,0 +1,67 @@
+@media (max-width: 720px) {
+  .container {
+    width: min(100% - 36px, var(--content-width));
+  }
+
+  .navigation-links {
+    gap: 13px;
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: calc(100svh - 110px);
+    padding: 76px 0 90px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .project-grid,
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-highlights {
+    gap: 10px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tool-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer .container {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 420px) {
+  .navigation {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navigation-links {
+    flex-wrap: wrap;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+}

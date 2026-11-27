@@ -1,20 +1,18 @@
 interface SectionHeadingProps {
-  number: string;
   title: string;
-  description: string;
+  description?: string;
+  reveal?: boolean;
 }
 
 export function SectionHeading({
-  number,
-  title,
   description,
+  reveal = false,
+  title,
 }: SectionHeadingProps) {
   return (
-    <div className="section-header">
-      <h2 className="section-title">
-        {number} / {title}
-      </h2>
-      <p className="section-lead">{description}</p>
+    <div className="section-header" data-reveal={reveal ? "" : undefined}>
+      <h2 className="section-title">{title}</h2>
+      {description && <p className="section-lead">{description}</p>}
     </div>
   );
 }

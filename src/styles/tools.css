@@ -1,0 +1,37 @@
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.tool-card {
+  min-height: 142px;
+  padding: 18px 12px;
+  text-align: center;
+}
+
+.tool-mark {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 10px;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.tool-icon {
+  width: 23px;
+  height: 23px;
+}
+
+.tool-card h3 {
+  font-size: 14px;
+}
+
+.tool-card p {
+  font-size: 12px;
+}

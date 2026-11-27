@@ -29,7 +29,10 @@ Depois da conexão, cada push para a branch de produção configurada na Vercel 
 
 - `src/data/portfolio.ts`: conteúdo do portfólio, separado da apresentação.
 - `src/types/portfolio.ts`: contratos TypeScript dos dados.
-- `src/components/`: componentes reutilizáveis com responsabilidades específicas.
-- `src/App.tsx`: composição das seções da página.
+- `src/components/`: componentes reutilizáveis e seções de apresentação.
+- `src/pages/PortfolioPage.tsx`: composição das seções e passagem dos dados para a interface.
+- `src/hooks/useScrollReveal.ts`: comportamento de animação acionado pela rolagem.
+- `src/styles/`: folhas de estilo organizadas por camada e área da interface, importadas por `index.css`.
+- `src/App.tsx`: ponto de entrada da interface; renderiza a página principal.
 
-A implementação usa composição e renderização orientada a dados para reduzir duplicação e facilitar manutenção. As responsabilidades são separadas entre conteúdo, apresentação e montagem da página, aplicando princípios SOLID sem adicionar padrões ou abstrações desnecessários para um site estático.
+A implementação usa composição e renderização orientada a dados para reduzir duplicação e facilitar manutenção. Conteúdo, apresentação, comportamento e montagem da página ficam separados. A estrutura aplica princípios SOLID e organização em camadas sem adicionar padrões ou abstrações desnecessários para um site estático.

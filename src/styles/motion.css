@@ -1,0 +1,94 @@
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 650ms ease,
+    transform 650ms cubic-bezier(0.2, 0.65, 0.3, 1);
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes hero-copy-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes name-entrance {
+  from {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateY(18px) scale(0.97);
+    text-shadow: 0 0 0 rgba(237, 73, 232, 0);
+  }
+
+  65% {
+    opacity: 1;
+    filter: blur(0);
+    text-shadow: 0 0 42px rgba(237, 73, 232, 0.58);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0) scale(1);
+    text-shadow: 0 0 28px rgba(237, 73, 232, 0.3);
+  }
+}
+
+@keyframes scroll-cue-bounce {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, 7px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .scroll-cue,
+  .hero h1,
+  .hero .eyebrow,
+  .hero .hero-role,
+  .hero .intro,
+  .hero .actions {
+    animation: none;
+  }
+
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .project-card,
+  .project-banner,
+  .tool-card,
+  .tool-mark,
+  .principle-card,
+  .principle-mark,
+  .contact-social a {
+    transition: none;
+  }
+
+  .scroll-reveal:not(.is-visible) .skill-bar-fill,
+  .scroll-reveal.is-visible .skill-bar-fill {
+    width: var(--level);
+    transition: none;
+  }
+}

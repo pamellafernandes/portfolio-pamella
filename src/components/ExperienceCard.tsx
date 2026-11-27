@@ -5,19 +5,21 @@ interface ExperienceCardProps {
 }
 
 export function ExperienceCard({ experience }: ExperienceCardProps) {
-  const { company, context, description, role, skills } = experience;
+  const { company, context, highlights, role } = experience;
 
   return (
     <article className="experience">
-      <h3>
-        {role} · {company}
-      </h3>
-      <div className="experience-meta">{context}</div>
-      <p>{description}</p>
-      <ul className="tag-list" aria-label={`${company} technologies`}>
-        {skills.map((skill) => (
-          <li className="tag" key={skill}>
-            {skill}
+      <header className="experience-header">
+        <div>
+          <h3>{role}</h3>
+          <div className="experience-meta">{company}</div>
+        </div>
+        <span className="experience-context">{context}</span>
+      </header>
+      <ul className="experience-highlights">
+        {highlights.map((highlight) => (
+          <li key={highlight}>
+            {highlight}
           </li>
         ))}
       </ul>
